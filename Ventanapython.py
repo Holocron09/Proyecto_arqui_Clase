@@ -98,6 +98,10 @@ class Ui_MainWindow(object):
         self.graphicsView_5 = PlotWidget(self.centralwidget)
         self.graphicsView_5.setGeometry(QtCore.QRect(130, 360, 321, 221))
         self.graphicsView_5.setObjectName("graphicsView_5")
+        self.checkBox = QtWidgets.QCheckBox(self.centralwidget)
+        self.checkBox.setGeometry(QtCore.QRect(500, 580, 70, 17))
+        self.checkBox.setChecked(True)
+        self.checkBox.setObjectName("checkBox")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 578, 21))
@@ -131,6 +135,7 @@ class Ui_MainWindow(object):
         self.label_15.setText(_translate("MainWindow", "Presión"))
         self.label_13.setText(_translate("MainWindow", "Temperatura"))
         self.label_14.setText(_translate("MainWindow", "Humedad"))
+        self.checkBox.setText(_translate("MainWindow", "Enable"))
 
 from pyqtgraph import PlotWidget
 
