@@ -23,16 +23,21 @@ temp=[]
 hum=[]
 pres=[]
 Alt=[]
-    
+pen=pg.mkPen(255,0,0)
+pen1=pg.mkPen(0,255,0)
+pen2=pg.mkPen(0,0,255)
+
 class MainWindow(QtWidgets.QMainWindow,Ui_MainWindow):
     global Temperatura, Humedad, Presion, Altitud 
     def __init__(self,*args,**kwargs):
         QtWidgets.QMainWindow.__init__(self,*args,**kwargs)
         self.setupUi(self)
-        self.checkBox.setChecked(0)
-        self.checkBox.stateChanged.connect(self.actualizar)
         self.valores()
-        
+        self.graphicsView.setBackground('w')
+        self.graphicsView_2.setBackground('w')
+        self.graphicsView_3.setBackground('w')
+        self.graphicsView_4.setBackground('w')
+        self.graphicsView_5.setBackground('w')
         #self.actualizar()
     def valores(self):
         global Temperatura, Humedad, Presion, Altitud
@@ -48,27 +53,21 @@ class MainWindow(QtWidgets.QMainWindow,Ui_MainWindow):
         self.lcdNumber_2.setProperty("value",Humedad)
         self.lcdNumber_3.setProperty("value",Presion)
         self.lcdNumber_4.setProperty("value",Altitud)
-            
-        
         
     def actualizar(self):
-        global Temperatura, Humedad, Presion, Altitud,val,hour, temp, hum, pres ,Alt
+        global Temperatura, Humedad, Presion, Altitud,val,hour,temp, hum, pres ,Alt
         hour.append(val)
         val+=1
-        temp.append(Temperatura)
-        hum.append(Humedad)
-        pres.append(Presion)
-        Alt.append(Altitud)
         sensor()
         self.graphicsView.plot(hour,temp)
-        self.graphicsView_2.plot(hour,hum)
-        self.graphicsView_3.plot(hour,pres)
-        self.graphicsView_4.plot(hour,Alt)
+        self.graphicsView_2.plot(hour,hum, pen=pen)
+        self.graphicsView_3.plot(hour,Alt,pen=pen1)
+        self.graphicsView_4.plot(hour,pres,pen=pen2)
         self.graphicsView_5.plot(hour,temp)
-        self.graphicsView_5.plot(hour,hum)
-        self.graphicsView_5.plot(hour,pres)
-        self.graphicsView_5.plot(hour,Alt)
-        if (val)>=20:
+        self.graphicsView_5.plot(hour,hum, pen=pen)
+        self.graphicsView_5.plot(hour,Alt,pen=pen1)
+        self.graphicsView_5.plot(hour,pres,pen=pen2)
+        if (val)>=30:
             val=0
             hour=[]
             temp=[]
@@ -80,17 +79,18 @@ class MainWindow(QtWidgets.QMainWindow,Ui_MainWindow):
             self.graphicsView_3.clear()
             self.graphicsView_4.clear()
             self.graphicsView_5.clear()
-#         print (Temperatura)
         self.valores()
-        
-        #sleep(1)
-          
+    
 def sensor():
-    global Temperatura, Humedad, Presion, Altitud
+    global Temperatura, Humedad, Presion, Altitud,temp, hum, pres ,Alt
     Temperatura=bme280.temperature
     Humedad=bme280.humidity
     Presion=bme280.pressure
     Altitud=bme280.altitude
+    temp.append(Temperatura)
+    hum.append(Humedad)
+    pres.append(Presion)
+    Alt.append(Altitud)
     
     
                 
