@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>462</width>
-    <height>583</height>
+    <width>474</width>
+    <height>637</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -34,22 +34,35 @@
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>Valores</string>
     </property>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>70</y>
+       <y>50</y>
        <width>47</width>
        <height>13</height>
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string>Humedad</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_7">
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temperatura</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -59,33 +72,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>47</width>
-       <height>13</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_4">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>30</y>
-       <width>47</width>
-       <height>13</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
+      <string>Altitud</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">
@@ -105,6 +92,19 @@
      <property name="geometry">
       <rect>
        <x>90</x>
+       <y>30</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
        <y>50</y>
        <width>47</width>
        <height>13</height>
@@ -118,16 +118,16 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>50</y>
+       <y>70</y>
        <width>47</width>
        <height>13</height>
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string>Presión</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_6">
+    <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -161,7 +161,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>Diales</string>
     </property>
     <widget class="QLabel" name="label_12">
      <property name="geometry">
@@ -255,7 +255,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_13">
+    <widget class="QLabel" name="label_16">
      <property name="geometry">
       <rect>
        <x>220</x>
@@ -265,20 +265,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_14">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>90</y>
-       <width>47</width>
-       <height>13</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>TextLabel</string>
+      <string>Altitud</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_15">
@@ -291,10 +278,23 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string>Presión</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_16">
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Temperatura</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -304,7 +304,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string>Humedad</string>
      </property>
     </widget>
    </widget>
@@ -328,13 +328,23 @@
      </rect>
     </property>
    </widget>
+   <widget class="PlotWidget" name="graphicsView_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>360</y>
+      <width>321</width>
+      <height>221</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>462</width>
+     <width>474</width>
      <height>21</height>
     </rect>
    </property>
