@@ -67,7 +67,9 @@ class MainWindow(QtWidgets.QMainWindow,Ui_MainWindow):
         self.graphicsView_5.plot(hour,hum, pen=pen)
         self.graphicsView_5.plot(hour,Alt,pen=pen1)
         self.graphicsView_5.plot(hour,pres,pen=pen2)
-        if (val)>=30:
+        valores=self.spinBox.value()
+        #print(valores)
+        if (val)>=valores:
             val=0
             hour=[]
             temp=[]
