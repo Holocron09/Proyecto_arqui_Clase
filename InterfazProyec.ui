@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>474</width>
+    <width>516</width>
     <height>637</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>161</width>
+      <width>191</width>
       <height>111</height>
      </rect>
     </property>
@@ -41,8 +41,8 @@
       <rect>
        <x>10</x>
        <y>50</y>
-       <width>47</width>
-       <height>13</height>
+       <width>91</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">
@@ -54,7 +54,7 @@
       <rect>
        <x>10</x>
        <y>30</y>
-       <width>71</width>
+       <width>91</width>
        <height>16</height>
       </rect>
      </property>
@@ -67,8 +67,8 @@
       <rect>
        <x>10</x>
        <y>90</y>
-       <width>47</width>
-       <height>13</height>
+       <width>91</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">
@@ -78,7 +78,7 @@
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>90</x>
+       <x>130</x>
        <y>90</y>
        <width>47</width>
        <height>13</height>
@@ -91,7 +91,7 @@
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>90</x>
+       <x>130</x>
        <y>30</y>
        <width>47</width>
        <height>13</height>
@@ -104,7 +104,7 @@
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>90</x>
+       <x>130</x>
        <y>50</y>
        <width>47</width>
        <height>13</height>
@@ -118,9 +118,9 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>70</y>
-       <width>47</width>
-       <height>13</height>
+       <y>63</y>
+       <width>91</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
@@ -130,7 +130,7 @@
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>90</x>
+       <x>130</x>
        <y>70</y>
        <width>47</width>
        <height>13</height>
@@ -154,7 +154,7 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>210</x>
       <y>20</y>
       <width>291</width>
       <height>111</height>
@@ -185,6 +185,12 @@
        <height>64</height>
       </rect>
      </property>
+     <property name="minimum">
+      <number>-100</number>
+     </property>
+     <property name="maximum">
+      <number>10000</number>
+     </property>
     </widget>
     <widget class="QDial" name="dial">
      <property name="geometry">
@@ -194,6 +200,12 @@
        <width>50</width>
        <height>64</height>
       </rect>
+     </property>
+     <property name="minimum">
+      <number>-100</number>
+     </property>
+     <property name="maximum">
+      <number>100</number>
      </property>
     </widget>
     <widget class="QLabel" name="label_9">
@@ -218,6 +230,9 @@
        <height>64</height>
       </rect>
      </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
     </widget>
     <widget class="QDial" name="dial_3">
      <property name="geometry">
@@ -227,6 +242,9 @@
        <width>50</width>
        <height>64</height>
       </rect>
+     </property>
+     <property name="maximum">
+      <number>1000</number>
      </property>
     </widget>
     <widget class="QLabel" name="label_11">
@@ -344,7 +362,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>474</width>
+     <width>516</width>
      <height>21</height>
     </rect>
    </property>
