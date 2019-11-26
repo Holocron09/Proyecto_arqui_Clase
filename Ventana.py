@@ -115,7 +115,7 @@ def Database():
             createTableQuery='''Create TABLE IF NOT EXISTS EstatMeteo
                 (ID SERIAL  PRIMARY KEY,
                 TEMPERATURA    REAL    NOT NULL,
-                HUMEDAD        REAL    NOT NULL
+                HUMEDAD        REAL    NOT NULL,
                 PRESION        REAL    NOT NULL,
                 ALTITUD        REAL    NOT NULL);'''
             cursor.execute(createTableQuery)
@@ -152,13 +152,6 @@ if __name__=="__main__":
     
     window.show()
     app.exec()
-    
-    
-    
-        
-    
-        
-        
     
     
     
